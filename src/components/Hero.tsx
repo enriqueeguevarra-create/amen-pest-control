@@ -1,22 +1,23 @@
 'use client';
 
 import { motion } from 'framer-motion';
+import Image from 'next/image';
 import Link from 'next/link';
 import { Phone, ShieldCheck, Award, ThumbsUp } from 'lucide-react';
 
 export default function Hero() {
   return (
     <section className="relative text-white overflow-hidden py-20 lg:py-32">
-      {/* Video Background */}
-      <video
-        autoPlay
-        muted
-        loop
-        playsInline
-        className="absolute inset-0 w-full h-full object-cover"
-      >
-        <source src="/videos/hero_bg.mp4" type="video/mp4" />
-      </video>
+      {/* Background Image */}
+      <div className="absolute inset-0">
+        <Image
+          src="/images/hero_bg.png"
+          alt="Hero Background"
+          fill
+          priority
+          className="object-cover"
+        />
+      </div>
       {/* Dark overlay for text readability */}
       <div className="absolute inset-0 bg-black/60" />
 
@@ -39,17 +40,28 @@ export default function Hero() {
 
             <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
               <Link
-                href="#contact"
-                className="bg-[var(--color-accent)] hover:bg-[var(--color-accent-hover)] text-white px-8 py-4 rounded-md font-bold text-lg transition-transform transform hover:-translate-y-1 shadow-lg"
+                href="https://api.leadconnectorhq.com/booking/amen-pest-control-l3o6zkahen"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="bg-[var(--color-accent)] hover:bg-[var(--color-accent-hover)] text-white px-8 py-4 rounded-md font-bold text-lg transition-transform transform hover:-translate-y-1 shadow-lg w-full sm:w-auto text-center"
               >
-                Schedule a Free Inspection
+                Book Appointment
               </Link>
-              <a
+              <Link
+                href="#contact"
+                className="bg-white text-[var(--color-primary)] hover:bg-gray-100 px-8 py-4 rounded-md font-bold text-lg transition-transform transform hover:-translate-y-1 shadow-lg w-full sm:w-auto text-center"
+              >
+                Request a Quote
+              </Link>
+            </div>
+            
+            <div className="mt-4 flex justify-center lg:justify-start">
+               <a
                 href="tel:8884282636"
-                className="bg-white/10 hover:bg-white/20 border border-white/20 text-white px-8 py-4 rounded-md font-bold text-lg flex items-center justify-center transition-all"
+                className="text-white hover:text-gray-200 font-bold text-lg flex items-center transition-all underline underline-offset-4"
               >
                 <Phone className="h-5 w-5 mr-2" />
-                (888) 428-AMEN
+                Or call us at (888) 428-AMEN
               </a>
             </div>
 
@@ -84,11 +96,11 @@ export default function Hero() {
                 loop
                 playsInline
                 controls
-                poster="https://video.wixstatic.com/video/611f73_18f8c9fafa44452ab69e851170a017b4/1080p/mp4/file.mp4/v1/fill/w_1280,h_720/file.jpg"
+                // poster="https://video.wixstatic.com/video/611f73_18f8c9fafa44452ab69e851170a017b4/1080p/mp4/file.mp4/v1/fill/w_1280,h_720/file.jpg"
                 className="w-full h-full object-cover"
               >
                 <source
-                  src="https://video.wixstatic.com/video/611f73_18f8c9fafa44452ab69e851170a017b4/1080p/mp4/file.mp4"
+                  src="/videos/vid_1.mp4"
                   type="video/mp4"
                 />
                 Your browser does not support the video tag.

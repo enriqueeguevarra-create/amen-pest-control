@@ -1,14 +1,14 @@
 'use client';
 
 import Link from 'next/link';
-import { Facebook, Twitter, Phone, Mail, MapPin } from 'lucide-react';
+import { Facebook, Twitter, Phone, Mail, MapPin, Instagram } from 'lucide-react';
 
 export default function Footer() {
   return (
     <footer className="bg-[var(--color-primary)] text-white pt-16 pb-8">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-12">
-          
+
           {/* Brand & Description */}
           <div className="space-y-4">
             <h3 className="text-2xl font-bold">
@@ -22,10 +22,14 @@ export default function Footer() {
                 <span className="sr-only">Facebook</span>
                 <Facebook className="h-6 w-6" />
               </Link>
-              <Link href="https://twitter.com/amen_pest" target="_blank" rel="noopener noreferrer" className="text-blue-200 hover:text-white transition-colors">
+              <Link href="https://www.instagram.com/amen_pest_control/" target="_blank" rel="noopener noreferrer" className="text-blue-200 hover:text-white transition-colors">
+                <span className="sr-only">Instagram</span>
+                <Instagram className="h-6 w-6" />
+              </Link>
+              {/* <Link href="https://twitter.com/amen_pest" target="_blank" rel="noopener noreferrer" className="text-blue-200 hover:text-white transition-colors">
                 <span className="sr-only">Twitter</span>
                 <Twitter className="h-6 w-6" />
-              </Link>
+              </Link> */}
             </div>
           </div>
 
@@ -72,26 +76,26 @@ export default function Footer() {
 
           {/* Newsletter / BBB */}
           <div className="space-y-6">
-            <div>
+            {/* <div>
               <h4 className="text-lg font-semibold uppercase tracking-wider text-white mb-4">Pest Tips & Offers</h4>
               <p className="text-sm text-blue-100 mb-3">Get seasonal pest tips — enter your email</p>
               <form className="flex" onSubmit={(e) => e.preventDefault()}>
-                <input 
-                  type="email" 
-                  placeholder="Email address" 
+                <input
+                  type="email"
+                  placeholder="Email address"
                   className="px-4 py-2 w-full text-gray-900 bg-white border-2 border-white/80 rounded-l-md focus:outline-none focus:ring-2 focus:ring-[var(--color-accent)] placeholder-gray-500"
                 />
                 <button type="submit" className="bg-[var(--color-accent)] hover:bg-[var(--color-accent-hover)] px-4 py-2 rounded-r-md transition-colors font-medium text-white">
                   Join
                 </button>
               </form>
-            </div>
-            
+            </div> */}
+
             <div className="pt-2">
               {/* BBB Badge Placeholder */}
               <div className="inline-flex items-center bg-white/10 px-4 py-2 border border-white/20 rounded-md">
                 <span className="text-white font-bold text-lg mr-2">BBB</span>
-                <span className="text-white text-sm font-medium leading-tight tracking-wider uppercase">ACCREDITED<br/>BUSINESS</span>
+                <span className="text-white text-sm font-medium leading-tight tracking-wider uppercase">ACCREDITED<br />BUSINESS</span>
                 <span className="ml-3 text-[var(--color-accent)] font-bold text-xl">A+</span>
               </div>
             </div>

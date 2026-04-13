@@ -17,6 +17,9 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: "AMEN Pest Control | Los Angeles' Most Trusted",
   description: "Eco-friendly & pet-friendly pest control in the LA area. A+ BBB Rating. Free inspections available.",
+  icons: {
+    icon: "/images/logo.png",
+  },
 };
 
 export default function RootLayout({

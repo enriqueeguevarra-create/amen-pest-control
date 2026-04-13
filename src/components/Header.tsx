@@ -2,7 +2,7 @@
 
 import Link from 'next/link';
 import Image from 'next/image';
-import { Phone, Menu, X } from 'lucide-react';
+import { Phone, Menu, X, Facebook, Instagram } from 'lucide-react';
 import { useState } from 'react';
 import { usePathname } from 'next/navigation';
 
@@ -16,6 +16,7 @@ export default function Header() {
     { href: '/about', label: 'About Us' },
     { href: '/#why-us', label: 'Why Us' },
     { href: '/#testimonials', label: 'Reviews' },
+    { href: '/faq', label: 'FAQ' },
   ];
 
   return (
@@ -25,12 +26,10 @@ export default function Header() {
           {/* Logo */}
           <div className="flex-shrink-0 flex items-center">
             <Link href="/" className="flex items-center">
-              <Image
-                src="https://static.wixstatic.com/media/611f73_4042eb5a013b4bfeb41498deb1d45fdc~mv2.png/v1/fill/w_124,h_67,al_c,q_85,enc_avif,quality_auto/Logo.png"
+              <img
+                src="/images/logo.png"
                 alt="AMEN Pest Control Logo"
-                width={124}
-                height={67}
-                priority
+                className="h-12 md:h-16 w-auto object-contain"
               />
             </Link>
           </div>
@@ -41,11 +40,10 @@ export default function Header() {
               <Link
                 key={link.href}
                 href={link.href}
-                className={`font-medium transition-colors ${
-                  pathname === link.href
-                    ? 'text-[var(--color-primary)] font-bold'
-                    : 'text-gray-700 hover:text-[var(--color-primary)]'
-                }`}
+                className={`font-medium transition-colors ${pathname === link.href
+                  ? 'text-[var(--color-primary)] font-bold'
+                  : 'text-gray-700 hover:text-[var(--color-primary)]'
+                  }`}
               >
                 {link.label}
               </Link>
@@ -54,15 +52,28 @@ export default function Header() {
 
           {/* Desktop CTA & Phone */}
           <div className="hidden md:flex items-center space-x-6">
+            <div className="flex items-center space-x-3 text-gray-500 mr-6">
+              <Link href="https://www.facebook.com/AMENPestControl/" target="_blank" rel="noopener noreferrer" className="hover:text-[var(--color-primary)] transition-colors">
+                <span className="sr-only">Facebook</span>
+                <Facebook className="h-5 w-5" />
+              </Link>
+              <Link href="https://www.instagram.com/amen_pest_control/" target="_blank" rel="noopener noreferrer" className="hover:text-[var(--color-primary)] transition-colors">
+                <span className="sr-only">Instagram</span>
+                <Instagram className="h-5 w-5" />
+              </Link>
+            </div>
             <a href="tel:8884282636" className="flex items-center text-[var(--color-primary)] font-bold text-lg hover:text-[var(--color-primary-light)]">
               <Phone className="h-5 w-5 mr-2" />
               (888) 428-AMEN
             </a>
-            <Link 
-              href="/#contact" 
-              className="bg-[var(--color-accent)] hover:bg-[var(--color-accent-hover)] text-white px-6 py-3 rounded-md font-bold transition-colors shadow-md"
+            <Link
+              href="https://api.leadconnectorhq.com/booking/amen-pest-control-l3o6zkahen"
+              target="_blank"
+              rel="noopener noreferrer"
+              onClick={() => setIsMobileMenuOpen && setIsMobileMenuOpen(false)}
+              className="w-full sm:w-auto text-center bg-[var(--color-accent)] hover:bg-[var(--color-accent-hover)] text-white px-6 py-3 rounded-md font-bold transition-colors shadow-md"
             >
-              Schedule Inspection
+              Book Online
             </Link>
           </div>
 
@@ -92,17 +103,26 @@ export default function Header() {
                 key={link.href}
                 href={link.href}
                 onClick={() => setIsMobileMenuOpen(false)}
-                className={`block px-3 py-2 text-base font-medium rounded-md ${
-                  pathname === link.href
-                    ? 'text-[var(--color-primary)] bg-blue-50 font-bold'
-                    : 'text-gray-700 hover:text-[var(--color-primary)] hover:bg-gray-50'
-                }`}
+                className={`block px-3 py-2 text-base font-medium rounded-md ${pathname === link.href
+                  ? 'text-[var(--color-primary)] bg-blue-50 font-bold'
+                  : 'text-gray-700 hover:text-[var(--color-primary)] hover:bg-gray-50'
+                  }`}
               >
                 {link.label}
               </Link>
             ))}
           </div>
           <div className="pt-4 pb-4 border-t border-gray-100 mb-2">
+            <div className="flex items-center justify-center space-x-6 mb-4">
+              <Link href="https://www.facebook.com/AMENPestControl/" target="_blank" rel="noopener noreferrer" className="text-gray-500 hover:text-[var(--color-primary)] transition-colors">
+                <span className="sr-only">Facebook</span>
+                <Facebook className="h-6 w-6" />
+              </Link>
+              <Link href="https://www.instagram.com/amen_pest_control/" target="_blank" rel="noopener noreferrer" className="text-gray-500 hover:text-[var(--color-primary)] transition-colors">
+                <span className="sr-only">Instagram</span>
+                <Instagram className="h-6 w-6" />
+              </Link>
+            </div>
             <div className="flex items-center justify-center px-4">
               <a href="tel:8884282636" className="flex items-center text-[var(--color-primary)] font-bold text-lg">
                 <Phone className="h-5 w-5 mr-2" />
@@ -110,12 +130,14 @@ export default function Header() {
               </a>
             </div>
             <div className="mt-4 px-4 flex justify-center">
-              <Link 
-                href="/#contact" 
+              <Link
+                href="https://api.leadconnectorhq.com/booking/amen-pest-control-l3o6zkahen"
+                target="_blank"
+                rel="noopener noreferrer"
                 onClick={() => setIsMobileMenuOpen(false)}
                 className="w-full text-center bg-[var(--color-accent)] hover:bg-[var(--color-accent-hover)] text-white px-6 py-3 rounded-md font-bold shadow-md"
               >
-                Schedule Free Inspection
+                Book Online
               </Link>
             </div>
           </div>

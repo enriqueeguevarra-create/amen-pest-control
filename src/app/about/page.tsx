@@ -100,7 +100,7 @@ export default function AboutPage() {
       </section>
 
       {/* Team Section */}
-      <section className="py-24 bg-gray-50 border-t border-gray-100">
+      {/* <section className="py-24 bg-gray-50 border-t border-gray-100">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-[var(--color-accent)] font-bold tracking-wider uppercase text-sm mb-2">Our Team</h2>
@@ -129,6 +129,33 @@ export default function AboutPage() {
             ))}
           </div>
         </div>
+      </section> */}
+
+      {/* Video Section */}
+      <section className="py-24 bg-zinc-50 border-t border-gray-100">
+        <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+          <motion.div
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6 }}
+          >
+            <h2 className="text-3xl md:text-4xl font-extrabold text-[var(--color-primary)] mb-8">
+              AMEN Pest Control Overview
+            </h2>
+            <div className="w-full aspect-video rounded-3xl overflow-hidden shadow-2xl bg-black">
+              <video
+                controls
+                playsInline
+                preload="metadata"
+                className="w-full h-full object-cover"
+              >
+                <source src="/videos/vid_2.mp4" type="video/mp4" />
+                Your browser does not support the video tag.
+              </video>
+            </div>
+          </motion.div>
+        </div>
       </section>
 
       {/* Values / Mission */}
@@ -139,12 +166,22 @@ export default function AboutPage() {
           <p className="text-blue-100 text-lg mb-8">
             No matter the size of your property or the severity of the infestation, our team has the tools and expertise to deliver results — guaranteed.
           </p>
-          <a
-            href="/#contact"
-            className="inline-block bg-[var(--color-accent)] hover:bg-[var(--color-accent-hover)] text-white px-8 py-4 rounded-md font-bold transition-colors shadow-lg text-lg"
-          >
-            Get in Touch
-          </a>
+          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <a
+              href="https://api.leadconnectorhq.com/booking/amen-pest-control-l3o6zkahen"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-block bg-[var(--color-accent)] hover:bg-[var(--color-accent-hover)] text-white px-8 py-4 rounded-md font-bold transition-colors shadow-lg text-lg w-full sm:w-auto"
+            >
+              Book Appointment
+            </a>
+            <a
+              href="/#contact"
+              className="inline-block bg-white text-[var(--color-primary)] hover:bg-blue-50 px-8 py-4 rounded-md font-bold transition-colors shadow-lg text-lg w-full sm:w-auto"
+            >
+              Get in Touch
+            </a>
+          </div>
         </div>
       </section>
     </>

@@ -53,7 +53,7 @@ export default function Services() {
   return (
     <section id="services" className="py-24 bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        
+
         <div className="flex flex-col md:flex-row md:items-end justify-between mb-16 gap-6">
           <div className="max-w-2xl">
             <h2 className="text-[var(--color-accent)] font-bold tracking-wider uppercase text-sm mb-2">Our Specialized Services</h2>
@@ -61,11 +61,11 @@ export default function Services() {
               How Can We Protect Your Home?
             </h3>
           </div>
-          <Link 
-            href="#contact" 
+          <Link
+            href="#contact"
             className="inline-flex items-center justify-center font-bold text-[var(--color-primary)] hover:text-[var(--color-accent)] transition-colors group"
           >
-            Get a Free Quote 
+            Get a Free Quote
             <span className="ml-2 transition-transform group-hover:translate-x-1">→</span>
           </Link>
         </div>
@@ -89,9 +89,9 @@ export default function Services() {
               <p className="text-gray-600 group-hover:text-gray-300 mb-6 flex-grow transition-colors">
                 {service.description}
               </p>
-              
-              <Link 
-                href="#contact" 
+
+              <Link
+                href={`/services#${service.id}`}
                 className="mt-auto inline-flex items-center text-sm font-bold text-[var(--color-accent)] group-hover:text-white group-hover:opacity-80 transition-all hover:opacity-100"
               >
                 Learn More <span className="ml-1 text-lg leading-none group-hover:translate-x-1 transition-transform">→</span>
