@@ -53,7 +53,7 @@ export default function Header() {
           {/* Desktop CTA & Phone */}
           <div className="hidden lg:flex items-center space-x-4 xl:space-x-6">
             <div className="flex items-center space-x-3 text-gray-500 mr-2 xl:mr-6">
-              <Link href="https://www.facebook.com/AMENPestControl/" target="_blank" rel="noopener noreferrer" className="hover:text-[var(--color-primary)] transition-colors">
+              <Link href="https://www.facebook.com/AmenPestControlLA" target="_blank" rel="noopener noreferrer" className="hover:text-[var(--color-primary)] transition-colors">
                 <span className="sr-only">Facebook</span>
                 <Facebook className="h-5 w-5" />
               </Link>
@@ -114,7 +114,7 @@ export default function Header() {
           </div>
           <div className="pt-4 pb-4 border-t border-gray-100 mb-2">
             <div className="flex items-center justify-center space-x-6 mb-4">
-              <Link href="https://www.facebook.com/AMENPestControl/" target="_blank" rel="noopener noreferrer" className="text-gray-500 hover:text-[var(--color-primary)] transition-colors">
+              <Link href="https://www.facebook.com/AmenPestControlLA" target="_blank" rel="noopener noreferrer" className="text-gray-500 hover:text-[var(--color-primary)] transition-colors">
                 <span className="sr-only">Facebook</span>
                 <Facebook className="h-6 w-6" />
               </Link>

@@ -18,7 +18,7 @@ export default function Footer() {
               Los Angeles&apos; most trusted pest control service. We provide environmentally-friendly pest control options and effective solutions for commercial properties and residential owners.
             </p>
             <div className="flex space-x-4 pt-2">
-              <Link href="https://www.facebook.com/AMENPestControl/" target="_blank" rel="noopener noreferrer" className="text-blue-200 hover:text-white transition-colors">
+              <Link href="https://www.facebook.com/AmenPestControlLA" target="_blank" rel="noopener noreferrer" className="text-blue-200 hover:text-white transition-colors">
                 <span className="sr-only">Facebook</span>
                 <Facebook className="h-6 w-6" />
               </Link>
