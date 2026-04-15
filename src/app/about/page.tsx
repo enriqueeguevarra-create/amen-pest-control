@@ -46,10 +46,10 @@ export default function AboutPage() {
 
       {/* Owner Section */}
       <section
-        className="py-32 relative bg-cover bg-center lg:bg-[left_center]"
+        className="py-32 relative bg-zinc-50 bg-cover bg-no-repeat bg-top lg:bg-center lg:bg-[length:auto_100%]"
         style={{ backgroundImage: "url('/images/george_2.png')" }}
       >
-        <div className="absolute inset-0 lg:bg-gradient-to-r lg:from-white/5 lg:via-white/5 lg:to-white/5"></div>
+        <div className="absolute inset-0 bg-white/40 lg:bg-transparent lg:bg-gradient-to-r lg:from-transparent lg:from-100% lg:to-white/90 pointer-events-none"></div>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 flex justify-end">
           <motion.div
             initial={{ opacity: 0, y: 30 }}

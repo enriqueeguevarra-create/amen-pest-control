@@ -11,7 +11,7 @@ export default function Hero() {
       {/* Background Image */}
       <div className="absolute inset-0">
         <Image
-          src="/images/bg_2.jpg"
+          src="/images/bg_pest.jpg"
           alt="Hero Background"
           fill
           priority
@@ -48,21 +48,11 @@ export default function Hero() {
                 Book A Service
               </Link>
               <Link
-                href="#contact"
+                href="tel:8884282636"
                 className="bg-white text-[var(--color-primary)] hover:bg-gray-100 px-8 py-4 rounded-md font-bold text-lg transition-transform transform hover:-translate-y-1 shadow-lg w-full sm:w-auto text-center"
               >
-                Request a Quote
+                Call Us (888) 428-AMEN
               </Link>
-            </div>
-
-            <div className="mt-4 flex justify-center lg:justify-start">
-              <a
-                href="tel:8884282636"
-                className="text-white hover:text-gray-200 font-bold text-lg flex items-center transition-all underline underline-offset-4"
-              >
-                <Phone className="h-5 w-5 mr-2" />
-                Or call us at (888) 428-AMEN
-              </a>
             </div>
 
             {/* Trust Badges Inline */}

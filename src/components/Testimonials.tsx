@@ -43,8 +43,12 @@ const testimonials = [
 
 export default function Testimonials() {
   return (
-    <section id="testimonials" className="py-24 bg-white overflow-hidden relative">
-
+    <section
+      id="testimonials"
+      className="py-24 overflow-hidden relative bg-cover bg-center bg-fixed"
+      style={{ backgroundImage: "url('/images/bg_2.jpg')" }}
+    >
+      <div className="absolute inset-0 bg-white/70 pointer-events-none"></div>
       {/* Decorative background element */}
       <div className="absolute top-0 right-0 -mt-20 -mr-20 w-80 h-80 bg-gray-50 rounded-full blur-3xl opacity-50 pointer-events-none" />
       <div className="absolute bottom-0 left-0 -mb-20 -ml-20 w-80 h-80 bg-orange-50 rounded-full blur-3xl opacity-50 pointer-events-none" />
