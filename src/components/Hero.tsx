@@ -11,7 +11,7 @@ export default function Hero() {
       {/* Background Image */}
       <div className="absolute inset-0">
         <Image
-          src="/images/hero_bg.png"
+          src="/images/bg_2.jpg"
           alt="Hero Background"
           fill
           priority
@@ -45,7 +45,7 @@ export default function Hero() {
                 rel="noopener noreferrer"
                 className="bg-[var(--color-accent)] hover:bg-[var(--color-accent-hover)] text-white px-8 py-4 rounded-md font-bold text-lg transition-transform transform hover:-translate-y-1 shadow-lg w-full sm:w-auto text-center"
               >
-                Book Appointment
+                Book A Service
               </Link>
               <Link
                 href="#contact"
@@ -54,9 +54,9 @@ export default function Hero() {
                 Request a Quote
               </Link>
             </div>
-            
+
             <div className="mt-4 flex justify-center lg:justify-start">
-               <a
+              <a
                 href="tel:8884282636"
                 className="text-white hover:text-gray-200 font-bold text-lg flex items-center transition-all underline underline-offset-4"
               >

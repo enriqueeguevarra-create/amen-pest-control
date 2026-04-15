@@ -35,7 +35,7 @@ export default function Header() {
           </div>
 
           {/* Desktop Navigation */}
-          <nav className="hidden md:flex space-x-8 items-center">
+          <nav className="hidden lg:flex space-x-4 xl:space-x-8 items-center">
             {navLinks.map((link) => (
               <Link
                 key={link.href}
@@ -51,8 +51,8 @@ export default function Header() {
           </nav>
 
           {/* Desktop CTA & Phone */}
-          <div className="hidden md:flex items-center space-x-6">
-            <div className="flex items-center space-x-3 text-gray-500 mr-6">
+          <div className="hidden lg:flex items-center space-x-4 xl:space-x-6">
+            <div className="flex items-center space-x-3 text-gray-500 mr-2 xl:mr-6">
               <Link href="https://www.facebook.com/AMENPestControl/" target="_blank" rel="noopener noreferrer" className="hover:text-[var(--color-primary)] transition-colors">
                 <span className="sr-only">Facebook</span>
                 <Facebook className="h-5 w-5" />
@@ -73,12 +73,12 @@ export default function Header() {
               onClick={() => setIsMobileMenuOpen && setIsMobileMenuOpen(false)}
               className="w-full sm:w-auto text-center bg-[var(--color-accent)] hover:bg-[var(--color-accent-hover)] text-white px-6 py-3 rounded-md font-bold transition-colors shadow-md"
             >
-              Book Online
+              Book A Service
             </Link>
           </div>
 
           {/* Mobile menu button */}
-          <div className="flex items-center md:hidden">
+          <div className="flex items-center lg:hidden">
             <button
               onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
               className="text-gray-700 hover:text-[var(--color-primary)] focus:outline-none"
@@ -96,7 +96,7 @@ export default function Header() {
 
       {/* Mobile Menu */}
       {isMobileMenuOpen && (
-        <div className="md:hidden bg-white border-t border-gray-100">
+        <div className="lg:hidden bg-white border-t border-gray-100">
           <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
             {navLinks.map((link) => (
               <Link

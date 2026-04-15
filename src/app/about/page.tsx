@@ -2,7 +2,6 @@
 
 import { motion } from 'framer-motion';
 import { Users, Heart, ShieldCheck, Award } from 'lucide-react';
-import Image from 'next/image';
 
 const teamMembers = [
   {
@@ -46,53 +45,41 @@ export default function AboutPage() {
       </section>
 
       {/* Owner Section */}
-      <section className="py-24 bg-white">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <section
+        className="py-32 relative bg-cover bg-center lg:bg-[left_center]"
+        style={{ backgroundImage: "url('/images/george_2.png')" }}
+      >
+        <div className="absolute inset-0 lg:bg-gradient-to-r lg:from-white/5 lg:via-white/5 lg:to-white/5"></div>
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 flex justify-end">
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
-            className="flex flex-col lg:flex-row gap-16 items-center"
+            className="w-full lg:w-3/5 bg-white/50 p-8 lg:p-12 rounded-3xl backdrop-blur-xs shadow-2xl border border-white/60"
           >
-            {/* Owner Photo */}
-            <div className="lg:w-2/5 flex justify-center">
-              <div className="w-72 h-72 md:w-96 md:h-96 rounded-3xl shadow-2xl border border-blue-100 relative overflow-hidden">
-                <Image
-                  src="/images/george.png"
-                  alt="George - Founder and CEO of AMEN Pest Control"
-                  fill
-                  className="object-cover"
-                  priority
-                />
-              </div>
+            <h2 className="text-[var(--color-accent)] font-bold tracking-wider uppercase text-sm mb-2">Meet The Owner</h2>
+            <h3 className="text-3xl md:text-4xl font-extrabold text-[var(--color-primary)] mb-6">
+              George Blackwell
+            </h3>
+            <div className="space-y-4 text-black text-lg leading-relaxed">
+              <p>
+                George has over 25 years of experience in the pest control industry. He has worked as a technician. inspector, and account manager for local, small businesses as well as international companies. In his current role as owner/operator, he now also serves as a presentation speaker with topics ranging from best practices to avoid pests, pests infestation intervention, as well as speaking as an entrepreneur and licensed professional to social enterprises designed to train homeless individuals, veterans, and others re-entering the job market.
+              </p>
             </div>
 
-            {/* Owner Info */}
-            <div className="lg:w-3/5">
-              <h2 className="text-[var(--color-accent)] font-bold tracking-wider uppercase text-sm mb-2">Meet The Owner</h2>
-              <h3 className="text-3xl md:text-4xl font-extrabold text-[var(--color-primary)] mb-6">
-                George Blackwell
-              </h3>
-              <div className="space-y-4 text-gray-700 text-lg leading-relaxed">
-                <p>
-                  George has over 25 years of experience in the pest control industry. He has worked as a technician. inspector, and account manager for local, small businesses as well as international companies. In his current role as owner/operator, he now also serves as a presentation speaker with topics ranging from best practices to avoid pests, pests infestation intervention, as well as speaking as an entrepreneur and licensed professional to social enterprises designed to train homeless individuals, veterans, and others re-entering the job market.
-                </p>
+            <div className="flex flex-wrap gap-6 mt-8 pt-8 border-t border-gray-100">
+              <div className="flex items-center text-gray-600">
+                <ShieldCheck className="h-5 w-5 text-[var(--color-accent)] mr-2" />
+                A+ BBB Rating
               </div>
-
-              <div className="flex flex-wrap gap-6 mt-8 pt-8 border-t border-gray-100">
-                <div className="flex items-center text-gray-600">
-                  <ShieldCheck className="h-5 w-5 text-[var(--color-accent)] mr-2" />
-                  A+ BBB Rating
-                </div>
-                <div className="flex items-center text-gray-600">
-                  <Award className="h-5 w-5 text-[var(--color-accent)] mr-2" />
-                  2020 Expertise Award
-                </div>
-                <div className="flex items-center text-gray-600">
-                  <Heart className="h-5 w-5 text-[var(--color-accent)] mr-2" />
-                  Eco & Pet Friendly
-                </div>
+              <div className="flex items-center text-gray-600">
+                <Award className="h-5 w-5 text-[var(--color-accent)] mr-2" />
+                2020 Expertise Award
+              </div>
+              <div className="flex items-center text-gray-600">
+                <Heart className="h-5 w-5 text-[var(--color-accent)] mr-2" />
+                Eco & Pet Friendly
               </div>
             </div>
           </motion.div>
@@ -173,7 +160,7 @@ export default function AboutPage() {
               rel="noopener noreferrer"
               className="inline-block bg-[var(--color-accent)] hover:bg-[var(--color-accent-hover)] text-white px-8 py-4 rounded-md font-bold transition-colors shadow-lg text-lg w-full sm:w-auto"
             >
-              Book Appointment
+              Book A Service
             </a>
             <a
               href="/#contact"
