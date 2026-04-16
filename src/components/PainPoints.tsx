@@ -6,22 +6,22 @@ import { BugOff, Rat, Bug, Home } from 'lucide-react';
 const pains = [
   {
     title: 'Roaches',
-    description: 'They multiply fast and hide in your walls. We flush them out.',
+    description: 'They multiply fast and hide in your walls We flush them out',
     icon: BugOff,
   },
   {
     title: 'Rodents',
-    description: 'Chewed wires, droppings, and health risks. We stop them at the source.',
+    description: 'Chewed wires, droppings, and health risks We stop them at the source',
     icon: Rat,
   },
   {
     title: 'Bed Bugs',
-    description: 'Sleepless nights and itchy bites. Our heat treatments eradicate them completely.',
+    description: 'Sleepless nights and itchy bites Our heat treatments eradicate them completely',
     icon: Bug,
   },
   {
     title: 'Termites',
-    description: 'Silent destroyers of your greatest investment. We protect your home structure.',
+    description: 'Silent destroyers of your greatest investment We protect your home structure',
     icon: Home,
   },
 ];
@@ -36,7 +36,7 @@ export default function PainPoints() {
             Don't Let Pests Take Over Your Home
           </h2>
           <p className="text-lg text-gray-600">
-            Los Angeles weather means pests are a year-round threat. Whether you're dealing with structural damage, health risks, or just the gross factor, we have the fast, effective solution you need.
+            Los Angeles weather means pests are a year-round threat Whether you're dealing with structural damage, health risks, or just the gross factor, we have the fast, effective solution you need
           </p>
         </div>
 

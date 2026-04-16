@@ -1,26 +1,30 @@
 'use client';
 
 import { motion } from 'framer-motion';
+import Image from 'next/image';
 import { Users, Heart, ShieldCheck, Award } from 'lucide-react';
 
 const teamMembers = [
   {
-    name: 'Jaeson Fuentes',
-    role: 'Assistant Director of Operations',
-    bio: 'Jaeson is a licensed pest control technician with 5 years of field experience. He specializes in residential and commercial pest control services, including termite control, rodent control, and general pest management.',
-    initials: 'JF',
+    name: 'Jaeson',
+    role: 'Assistant Field Manager',
+    bio: 'Jaeson began his career at AMEN Pest Control as a student apprentice and rose through the ranks as a day laborer turned part-time technician turned full-time account manager turned current Assistant Field Manager. Jaeson is a team player, for colleagues and customers alike, and his customer care is unparalleled. He is the proud father of a beautiful daughter.',
+    initials: 'J',
+    photo: '', // e.g. '/images/team/jaeson.jpg'
   },
   {
-    name: 'Eugene Nguyen',
+    name: 'Eugene',
     role: 'Director of Operations',
-    bio: 'Eugene has 8 years experience in the pest control industry and an extensive professional history in the service sector. These combined skills have positioned him at the crossroads between field management, customer service, and service technician - our swiss army knife in residence.',
-    initials: 'EN',
+    bio: 'Eugene has over a decade of experience in the pest control industry. His industry expertise combined with his infectious laugh are a calming presence when dealing with pesky pests. Eugene has wisdom to share about everything, from conversations about rats or fleas to conversations about Japan or Hawaii, as he, his wife, and daughter and son are well-traveled. ',
+    initials: 'E',
+    photo: '/images/eugene.jpg', // e.g. '/images/team/eugene.jpg'
   },
   {
-    name: 'Harold Jones, Sr.',
+    name: 'Silvia',
     role: 'Service Manager',
-    bio: 'Harold has 30 years experience in the pest control industry. He understands the biology of pests as well as their behavioral patterns, which allows him the ability to  answer almost any question and effectively treat even the most highly-infested areas. From rats to fleas, Harold is the pest whisperer.',
-    initials: 'DK',
+    bio: "Silvia has spent her professional career managing the office operations of growing customer service industry businesses. She has mastered the delicate balance of promoting collaborative communication between her office team, the field technicians, and customers - whether they're managers, maintenance staff, tenants, or homeowners - all in a fast-paced and ever shifting environment. These skills are refined as a wife and mother of 4 boys.",
+    initials: 'S',
+    photo: '', // e.g. '/images/team/harold.jpg'
   },
 ];
 
@@ -39,7 +43,7 @@ export default function AboutPage() {
             About <span className="text-[var(--color-accent)]">AMEN Pest Control</span>
           </motion.h1>
           <p className="text-xl text-blue-100 max-w-2xl mx-auto">
-            We&apos;re a family-run, community-driven pest control company serving the greater Los Angeles area with pride.
+            We&apos;re a family-run, community-driven pest control company serving the greater Southern California area with pride
           </p>
         </div>
       </section>
@@ -56,28 +60,28 @@ export default function AboutPage() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
-            className="w-full lg:w-3/5 bg-white/50 p-8 lg:p-12 rounded-3xl backdrop-blur-xs shadow-2xl border border-white/60"
+            className="w-full lg:w-3/5 bg-white/50 p-8 lg:p-12 rounded-3xl backdrop-blur-lg shadow-2xl border border-white/60"
           >
             <h2 className="text-[var(--color-accent)] font-bold tracking-wider uppercase text-sm mb-2">Meet The Owner</h2>
             <h3 className="text-3xl md:text-4xl font-extrabold text-[var(--color-primary)] mb-6">
-              George Blackwell
+              George
             </h3>
             <div className="space-y-4 text-black text-lg leading-relaxed">
               <p>
-                George has over 25 years of experience in the pest control industry. He has worked as a technician. inspector, and account manager for local, small businesses as well as international companies. In his current role as owner/operator, he now also serves as a presentation speaker with topics ranging from best practices to avoid pests, pests infestation intervention, as well as speaking as an entrepreneur and licensed professional to social enterprises designed to train homeless individuals, veterans, and others re-entering the job market.
+                George has over 25 years of experience in the pest control industry. He has worked as a technician, inspector, and account manager for small businesses as well as international companies. Since the founding of AMEN in 2013, George's commitment to service has expanded to include motivational speaking presentations as an entrepreneur and licensed professional, AMEN sponsorship of multiple social justice organizations, and collaborations with training programs for people experiencing homelessness, veterans, and others overcoming challenges to re-enter the job market. George and his wife are preparing their 8 children to carry on this legacy of service.
               </p>
             </div>
 
             <div className="flex flex-wrap gap-6 mt-8 pt-8 border-t border-gray-100">
-              <div className="flex items-center text-gray-600">
+              <div className="flex items-center text-black">
                 <ShieldCheck className="h-5 w-5 text-[var(--color-accent)] mr-2" />
                 A+ BBB Rating
               </div>
-              <div className="flex items-center text-gray-600">
+              {/* <div className="flex items-center text-gray-600">
                 <Award className="h-5 w-5 text-[var(--color-accent)] mr-2" />
                 2020 Expertise Award
-              </div>
-              <div className="flex items-center text-gray-600">
+              </div> */}
+              <div className="flex items-center text-black">
                 <Heart className="h-5 w-5 text-[var(--color-accent)] mr-2" />
                 Eco & Pet Friendly
               </div>
@@ -87,7 +91,7 @@ export default function AboutPage() {
       </section>
 
       {/* Team Section */}
-      {/* <section className="py-24 bg-gray-50 border-t border-gray-100">
+      <section className="py-24 bg-gray-50 border-t border-gray-100">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-[var(--color-accent)] font-bold tracking-wider uppercase text-sm mb-2">Our Team</h2>
@@ -106,9 +110,22 @@ export default function AboutPage() {
                 transition={{ delay: index * 0.15, duration: 0.5 }}
                 className="bg-white rounded-2xl shadow-lg p-8 text-center hover:-translate-y-2 transition-transform duration-300 border border-gray-100"
               >
-                <div className="w-24 h-24 mx-auto bg-[var(--color-primary)] rounded-full flex items-center justify-center text-white text-3xl font-bold mb-6 shadow-md">
-                  {member.initials}
-                </div>
+                {/* Avatar: photo if available, otherwise initials */}
+                {member.photo ? (
+                  <div className="w-24 h-24 mx-auto rounded-full overflow-hidden mb-6 shadow-md ring-4 ring-[var(--color-primary)]/20">
+                    <Image
+                      src={member.photo}
+                      alt={member.name}
+                      width={96}
+                      height={96}
+                      className="w-full h-full object-cover"
+                    />
+                  </div>
+                ) : (
+                  <div className="w-24 h-24 mx-auto bg-[var(--color-primary)] rounded-full flex items-center justify-center text-white text-3xl font-bold mb-6 shadow-md">
+                    {member.initials}
+                  </div>
+                )}
                 <h4 className="text-xl font-bold text-[var(--color-primary)] mb-1">{member.name}</h4>
                 <p className="text-[var(--color-accent)] font-medium text-sm mb-4">{member.role}</p>
                 <p className="text-gray-600 leading-relaxed">{member.bio}</p>
@@ -116,10 +133,10 @@ export default function AboutPage() {
             ))}
           </div>
         </div>
-      </section> */}
+      </section>
 
       {/* Video Section */}
-      <section className="py-24 bg-zinc-50 border-t border-gray-100">
+      <section className="pb-24 bg-zinc-50 border-t border-gray-100">
         <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <motion.div
             initial={{ opacity: 0, y: 30 }}
@@ -151,9 +168,10 @@ export default function AboutPage() {
           <Users className="h-12 w-12 mx-auto text-[var(--color-accent)] mb-6" />
           <h2 className="text-3xl font-extrabold mb-4">Serving Residential, Commercial & Property Management</h2>
           <p className="text-blue-100 text-lg mb-8">
-            No matter the size of your property or the severity of the infestation, our team has the tools and expertise to deliver results — guaranteed.
+            No matter the size of your property or the severity of the infestation, our team has the tools and expertise to deliver results — guaranteed
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            {/* TEMPORARY CTA — Book A Service button commented out until booking system is live
             <a
               href="https://api.leadconnectorhq.com/booking/amen-pest-control-l3o6zkahen"
               target="_blank"
@@ -162,11 +180,18 @@ export default function AboutPage() {
             >
               Book A Service
             </a>
+            */}
             <a
               href="/#contact"
+              className="inline-block bg-[var(--color-accent)] hover:bg-[var(--color-accent-hover)] text-white px-8 py-4 rounded-md font-bold transition-colors shadow-lg text-lg w-full sm:w-auto"
+            >
+              Get a Free Quote
+            </a>
+            <a
+              href="tel:8884282636"
               className="inline-block bg-white text-[var(--color-primary)] hover:bg-blue-50 px-8 py-4 rounded-md font-bold transition-colors shadow-lg text-lg w-full sm:w-auto"
             >
-              Get in Touch
+              Call (888) 428-AMEN
             </a>
           </div>
         </div>

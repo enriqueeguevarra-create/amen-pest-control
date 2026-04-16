@@ -66,6 +66,7 @@ export default function Header() {
               <Phone className="h-5 w-5 mr-2" />
               (888) 428-AMEN
             </a>
+            {/* TEMPORARY CTA — Book A Service button commented out until booking system is live
             <Link
               href="https://api.leadconnectorhq.com/booking/amen-pest-control-l3o6zkahen"
               target="_blank"
@@ -74,6 +75,14 @@ export default function Header() {
               className="w-full sm:w-auto text-center bg-[var(--color-accent)] hover:bg-[var(--color-accent-hover)] text-white px-6 py-3 rounded-md font-bold transition-colors shadow-md"
             >
               Book A Service
+            </Link>
+            */}
+            <Link
+              href="/#contact"
+              onClick={() => setIsMobileMenuOpen && setIsMobileMenuOpen(false)}
+              className="w-full sm:w-auto text-center bg-[var(--color-accent)] hover:bg-[var(--color-accent-hover)] text-white px-6 py-3 rounded-md font-bold transition-colors shadow-md"
+            >
+              Get a Free Quote
             </Link>
           </div>
 
@@ -130,6 +139,7 @@ export default function Header() {
               </a>
             </div>
             <div className="mt-4 px-4 flex justify-center">
+              {/* TEMPORARY CTA — Book Online button commented out until booking system is live
               <Link
                 href="https://api.leadconnectorhq.com/booking/amen-pest-control-l3o6zkahen"
                 target="_blank"
@@ -138,6 +148,14 @@ export default function Header() {
                 className="w-full text-center bg-[var(--color-accent)] hover:bg-[var(--color-accent-hover)] text-white px-6 py-3 rounded-md font-bold shadow-md"
               >
                 Book Online
+              </Link>
+              */}
+              <Link
+                href="/#contact"
+                onClick={() => setIsMobileMenuOpen(false)}
+                className="w-full text-center bg-[var(--color-accent)] hover:bg-[var(--color-accent-hover)] text-white px-6 py-3 rounded-md font-bold shadow-md"
+              >
+                Get a Free Quote
               </Link>
             </div>
           </div>

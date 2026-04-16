@@ -6,8 +6,8 @@ import { Leaf, ShieldCheck, HeartHandshake } from 'lucide-react';
 const trustFeatures = [
   {
     icon: Leaf,
-    title: '2020 Award Recipient ',
-    description: 'AMEN Pest  Control has been recognized as one of the best pest control companies in Los Angeles for 2020',
+    title: 'Eco & Pet Friendly',
+    description: 'We use EPA-approved, environmentally-friendly products that are safe for your children, pets, and the planet',
   },
   {
     icon: ShieldCheck,
@@ -17,7 +17,7 @@ const trustFeatures = [
   {
     icon: HeartHandshake,
     title: '100% Satisfaction Guarantee',
-    description: 'If you are still experiencing an issue with the pest we treated for within 30 days, we will come out to treat again at no cost to you!',
+    description: 'If you are still experiencing an issue with the pest we treated for within 30 days, we will come out to treat again at no cost to you',
   },
 ];
 
@@ -27,12 +27,12 @@ export default function TrustSection() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 
         <div className="text-center max-w-3xl mx-auto mb-16">
-          <h2 className="text-[var(--color-accent)] font-bold tracking-wider uppercase text-sm mb-2">Why Homeowners Choose AMEN</h2>
+          <h2 className="text-[var(--color-accent)] font-bold tracking-wider uppercase text-sm mb-2">Why Choose AMEN</h2>
           <h3 className="text-3xl md:text-5xl font-extrabold text-[var(--color-primary)] mb-6">
             The Future of Integrated Pest Management
           </h3>
           <p className="text-xl text-gray-600">
-            We don't just spray chemicals and leave. We provide environmentally-friendly, effective solutions backed by an unbeatable guarantee.
+            We don't just spray chemicals and leave We provide environmentally-friendly, effective solutions backed by an unbeatable guarantee
           </p>
         </div>
 

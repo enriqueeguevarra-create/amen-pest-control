@@ -33,7 +33,7 @@ export default function Gallery() {
         <h2 className="text-3xl md:text-5xl font-extrabold text-white tracking-tight">
           Our Recent <span className="text-[var(--color-accent)]">Work</span>
         </h2>
-        <p className="mt-4 text-zinc-400 max-w-2xl mx-auto text-lg">
+        <p className="mt-4 text-zinc-200 max-w-2xl mx-auto text-lg">
           Swipe through our gallery to see our completed pest control projects.
         </p>
       </div>

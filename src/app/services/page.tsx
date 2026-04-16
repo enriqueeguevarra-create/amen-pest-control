@@ -26,7 +26,7 @@ const services = [
     details: [
       'Thorough property assessment for entry points',
       'Sealing and exclusion work to prevent re-entry',
-      'Trapping and removal of mice, rats, and gophers',
+      'Trapping and removal of mice, rats',
       'Attic and crawl-space sanitation',
       'Follow-up monitoring visits',
     ],
@@ -64,7 +64,7 @@ const services = [
     shortDescription: 'Humane deterrents for commercial and residential properties.',
     details: [
       'Bird spike, netting, and wire installation',
-      'Pigeon and sparrow exclusion',
+      'Pigeon and crows exclusion',
       'Fly control for restaurants and food facilities',
       'Rooftop and ledge deterrent systems',
       'Humane trapping and relocation',
@@ -113,7 +113,7 @@ export default function ServicesPage() {
             Our <span className="text-[var(--color-accent)]">Services</span>
           </motion.h1>
           <p className="text-xl text-blue-100 max-w-2xl mx-auto">
-            From roaches to rodents, termites to birds — we have the expertise and eco-friendly solutions to protect your LA property.
+            From roaches to rodents, termites to birds — we have the expertise and eco-friendly solutions to protect your property.
           </p>
         </div>
       </section>
@@ -129,9 +129,8 @@ export default function ServicesPage() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.5 }}
-              className={`scroll-mt-28 flex flex-col lg:flex-row gap-12 items-center ${
-                index % 2 !== 0 ? 'lg:flex-row-reverse' : ''
-              }`}
+              className={`scroll-mt-28 flex flex-col lg:flex-row gap-12 items-center ${index % 2 !== 0 ? 'lg:flex-row-reverse' : ''
+                }`}
             >
               {/* Icon Panel */}
               <div className="lg:w-2/5 flex justify-center">
@@ -174,11 +173,11 @@ export default function ServicesPage() {
               href="/#contact"
               className="bg-[var(--color-accent)] hover:bg-[var(--color-accent-hover)] text-white px-8 py-4 rounded-md font-bold transition-colors shadow-lg text-lg"
             >
-              Schedule a Free Inspection
+              Get a Free Quote
             </Link>
             <a
               href="tel:8884282636"
-              className="bg-white/10 hover:bg-white/20 border border-white/20 text-white px-8 py-4 rounded-md font-bold text-lg transition-all"
+              className="inline-block bg-white text-[var(--color-primary)] hover:bg-blue-50 px-8 py-4 rounded-md font-bold transition-colors shadow-lg text-lg w-full sm:w-auto"
             >
               Call (888) 428-AMEN
             </a>

@@ -56,7 +56,7 @@ export default function Testimonials() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
 
         <div className="text-center max-w-3xl mx-auto mb-16">
-          <h2 className="text-[var(--color-accent)] font-bold tracking-wider uppercase text-sm mb-2">Real LA Homeowners</h2>
+
           <h3 className="text-3xl md:text-5xl font-extrabold text-[var(--color-primary)] mb-6">
             Hear What Our Clients Say
           </h3>

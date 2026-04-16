@@ -31,14 +31,15 @@ export default function Hero() {
             className="space-y-8 text-center lg:text-left"
           >
             <h1 className="text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight">
-              Los Angeles' Most <span className="text-[var(--color-accent)]">Trusted</span> Pest Control
+              Southern California's <span className="text-[var(--color-accent)]">Most Trusted</span> Pest Control
             </h1>
 
             <p className="text-xl text-gray-200 max-w-2xl mx-auto lg:mx-0 leading-relaxed">
-              Fast response times, eco-friendly & pet-friendly solutions to keep your home or business 100% pest-free.
+              Fast response times, eco-friendly & pet-friendly solutions to keep your home or business 100% pest-free
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
+              {/* TEMPORARY CTA — Book A Service button commented out until booking system is live
               <Link
                 href="https://api.leadconnectorhq.com/booking/amen-pest-control-l3o6zkahen"
                 target="_blank"
@@ -46,6 +47,13 @@ export default function Hero() {
                 className="bg-[var(--color-accent)] hover:bg-[var(--color-accent-hover)] text-white px-8 py-4 rounded-md font-bold text-lg transition-transform transform hover:-translate-y-1 shadow-lg w-full sm:w-auto text-center"
               >
                 Book A Service
+              </Link>
+              */}
+              <Link
+                href="/#contact"
+                className="bg-[var(--color-accent)] hover:bg-[var(--color-accent-hover)] text-white px-8 py-4 rounded-md font-bold text-lg transition-transform transform hover:-translate-y-1 shadow-lg w-full sm:w-auto text-center"
+              >
+                Get a Free Quote
               </Link>
               <Link
                 href="tel:8884282636"
@@ -61,10 +69,10 @@ export default function Hero() {
                 <ShieldCheck className="h-5 w-5 text-[var(--color-accent)] mr-2" />
                 A+ BBB Rated
               </div>
-              <div className="flex items-center text-gray-300">
+              {/* <div className="flex items-center text-gray-300">
                 <Award className="h-5 w-5 text-[var(--color-accent)] mr-2" />
                 2020 Expertise Award
-              </div>
+              </div> */}
               <div className="flex items-center text-gray-300">
                 <ThumbsUp className="h-5 w-5 text-[var(--color-accent)] mr-2" />
                 100% Satisfaction Guarantee

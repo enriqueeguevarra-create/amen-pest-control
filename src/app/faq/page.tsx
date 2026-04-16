@@ -122,10 +122,10 @@ export default function FaqPage() {
           >
             Everything you need to know about AMEN Pest Control. Can&apos;t find your answer?{' '}
             <a
-              href="tel:+1234567890"
+              href="tel:8884282636"
               className="text-white font-bold hover:text-[var(--color-accent)] transition-colors underline underline-offset-2"
             >
-              Call us directly.
+              <br />Call us directly
             </a>
           </motion.p>
         </div>
@@ -160,6 +160,7 @@ export default function FaqPage() {
                 <Phone className="h-5 w-5" />
                 Call Us Now
               </a>
+              {/* TEMPORARY CTA — Book Online button commented out until booking system is live
               <a
                 id="faq-cta-schedule"
                 href="https://api.leadconnectorhq.com/booking/amen-pest-control-l3o6zkahen"
@@ -168,6 +169,14 @@ export default function FaqPage() {
                 className="bg-[var(--color-accent)] hover:bg-[var(--color-accent-hover)] text-white font-bold px-6 py-3 rounded-lg transition-colors shadow-md text-center"
               >
                 Book Online
+              </a>
+              */}
+              <a
+                id="faq-cta-schedule"
+                href="/#contact"
+                className="bg-[var(--color-accent)] hover:bg-[var(--color-accent-hover)] text-white font-bold px-6 py-3 rounded-lg transition-colors shadow-md text-center"
+              >
+                Get a Free Quote
               </a>
             </div>
           </motion.div>

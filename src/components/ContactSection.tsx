@@ -75,7 +75,7 @@ export default function ContactSection() {
             <div>
               <h3 className="text-3xl font-extrabold mb-4">Get a Free Quote</h3>
               <p className="text-blue-100 mb-10 text-lg">
-                Fill out the form and our team will get back to you within 24 hours to schedule your free inspection.
+                Fill out the form and our team will get back to you within 24 hours to schedule your free inspection
               </p>
 
               <div className="space-y-8">
@@ -107,7 +107,7 @@ export default function ContactSection() {
             </div>
 
             <div className="mt-16 pt-8 border-t border-white/10">
-              <p className="font-medium text-blue-100">Guaranteed response time within 24 hours.</p>
+              <p className="font-medium text-blue-100">Guaranteed response time within 24 hours</p>
             </div>
           </div>
 
@@ -123,7 +123,7 @@ export default function ContactSection() {
                   <CheckCircle className="h-10 w-10" />
                 </div>
                 <h4 className="text-3xl font-bold text-[var(--color-primary)]">Message Sent!</h4>
-                <p className="text-xl text-gray-600">We&apos;ve received your request and will contact you shortly.</p>
+                <p className="text-xl text-gray-600">We&apos;ve received your request and will contact you shortly</p>
                 <button
                   onClick={() => setSubmitStatus('idle')}
                   className="mt-8 text-[var(--color-accent)] font-bold hover:underline"
@@ -215,7 +215,7 @@ export default function ContactSection() {
 
                 {submitStatus === 'error' && (
                   <div className="p-4 bg-red-50 text-red-600 rounded-lg text-sm font-bold">
-                    There was an error sending your message. Please give us a call instead.
+                    There was an error sending your message Please give us a call instead
                   </div>
                 )}
 
@@ -227,7 +227,7 @@ export default function ContactSection() {
                   >
                     {isSubmitting ? 'Sending Request...' : 'Get Your Free Quote'}
                   </button>
-                  <p className="text-center text-gray-500 text-sm mt-4">No commitment required. 100% free inspection.</p>
+                  <p className="text-center text-gray-500 text-sm mt-4">No commitment required 100% free inspection</p>
                 </div>
               </form>
             )}
