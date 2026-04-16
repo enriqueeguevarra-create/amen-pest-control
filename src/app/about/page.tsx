@@ -15,7 +15,7 @@ const teamMembers = [
   {
     name: 'Eugene',
     role: 'Director of Operations',
-    bio: 'Eugene has over a decade of experience in the pest control industry. His industry expertise combined with his infectious laugh are a calming presence when dealing with pesky pests. Eugene has wisdom to share about everything, from conversations about rats or fleas to conversations about Japan or Hawaii, as he, his wife, and daughter and son are well-traveled. ',
+    bio: 'Eugene has over a decade of experience in the pest control industry. His industry expertise combined with his infectious laugh are a calming presence when dealing with pesky pests. Eugene has wisdom to share about everything, from conversations about rats or fleas to conversations about Japan or Hawaii, as he, his wife, and daughter and son are well-traveled.',
     initials: 'E',
     photo: '/images/eugene.jpg', // e.g. '/images/team/eugene.jpg'
   },
@@ -24,7 +24,7 @@ const teamMembers = [
     role: 'Service Manager',
     bio: "Silvia has spent her professional career managing the office operations of growing customer service industry businesses. She has mastered the delicate balance of promoting collaborative communication between her office team, the field technicians, and customers - whether they're managers, maintenance staff, tenants, or homeowners - all in a fast-paced and ever shifting environment. These skills are refined as a wife and mother of 4 boys.",
     initials: 'S',
-    photo: '', // e.g. '/images/team/harold.jpg'
+    photo: '/images/SilviaProfile.jpg', // e.g. '/images/team/harold.jpg'
   },
 ];
 
@@ -43,7 +43,7 @@ export default function AboutPage() {
             About <span className="text-[var(--color-accent)]">AMEN Pest Control</span>
           </motion.h1>
           <p className="text-xl text-blue-100 max-w-2xl mx-auto">
-            We&apos;re a family-run, community-driven pest control company serving the greater Southern California area with pride
+            We&apos;re a family-run, community-driven pest control company serving the greater Southern California area with pride.
           </p>
         </div>
       </section>
@@ -112,17 +112,17 @@ export default function AboutPage() {
               >
                 {/* Avatar: photo if available, otherwise initials */}
                 {member.photo ? (
-                  <div className="w-24 h-24 mx-auto rounded-full overflow-hidden mb-6 shadow-md ring-4 ring-[var(--color-primary)]/20">
+                  <div className="w-31 h-31 mx-auto rounded-full overflow-hidden mb-6 shadow-md ring-4 ring-[var(--color-primary)]/20">
                     <Image
                       src={member.photo}
                       alt={member.name}
-                      width={96}
-                      height={96}
+                      width={85}
+                      height={85}
                       className="w-full h-full object-cover"
                     />
                   </div>
                 ) : (
-                  <div className="w-24 h-24 mx-auto bg-[var(--color-primary)] rounded-full flex items-center justify-center text-white text-3xl font-bold mb-6 shadow-md">
+                  <div className="w-31 h-31 mx-auto bg-[var(--color-primary)] rounded-full flex items-center justify-center text-white text-3xl font-bold mb-6 shadow-md">
                     {member.initials}
                   </div>
                 )}
@@ -168,7 +168,7 @@ export default function AboutPage() {
           <Users className="h-12 w-12 mx-auto text-[var(--color-accent)] mb-6" />
           <h2 className="text-3xl font-extrabold mb-4">Serving Residential, Commercial & Property Management</h2>
           <p className="text-blue-100 text-lg mb-8">
-            No matter the size of your property or the severity of the infestation, our team has the tools and expertise to deliver results — guaranteed
+            No matter the size of your property or the severity of the infestation, our team has the tools and expertise to deliver results — guaranteed.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             {/* TEMPORARY CTA — Book A Service button commented out until booking system is live

@@ -14,6 +14,7 @@ const images = [
   "/gallery/HaroldWoodTreat.jpeg",
   "/gallery/Mayra.jpg",
   "/gallery/MayraBaitStation.jpg",
+  "/gallery/IMG_0800.jpg",
 ];
 
 export default function Gallery() {

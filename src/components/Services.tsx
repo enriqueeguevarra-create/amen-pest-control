@@ -9,43 +9,43 @@ const services = [
     id: 'general',
     title: 'General Pest Control',
     icon: Crosshair,
-    description: 'Comprehensive protection against common household pests Safe for family and pets',
+    description: 'Comprehensive protection against common household pests. Safe for family and pets.',
   },
   {
     id: 'rodents',
     title: 'Rodent Control',
     icon: Map, // Proxy icon for exclusion
-    description: 'Trapping, exclusion, and sanitation to rid your property of mice and rats',
+    description: 'Trapping, exclusion, and sanitation to rid your property of mice and rats.',
   },
   {
     id: 'bedbugs',
     title: 'Bed Bugs',
     icon: Home,
-    description: 'Targeted treatments to completely eliminate bed bugs from mattresses and furniture',
+    description: 'Targeted treatments to completely eliminate bed bugs from mattresses and furniture.',
   },
   {
     id: 'termites',
     title: 'Termites & Fungus',
     icon: ShieldAlert,
-    description: 'Local treatments and full-structure protection against wood-destroying organisms',
+    description: 'Local treatments and full-structure protection against wood-destroying organisms.',
   },
   {
     id: 'birds',
     title: 'Bird & Flies Abatement',
     icon: Bird,
-    description: 'Humane deterrents to keep birds and flies away from your commercial or residential property',
+    description: 'Humane deterrents to keep birds and flies away from your commercial or residential property.',
   },
   {
     id: 'heat',
     title: 'Heat Treatment',
     icon: Thermometer,
-    description: '100% chemical-free thermal remediation Highly effective for deep infestations',
+    description: '100% chemical-free thermal remediation. Highly effective for deep infestations.',
   },
   {
     id: 'freezing',
     title: 'Freezing Treatment',
     icon: Wind,
-    description: 'Cryonite freezing technology to instantly kill pests without toxic residues',
+    description: 'Cryonite freezing technology to instantly kill pests without toxic residues.',
   },
 ];
 

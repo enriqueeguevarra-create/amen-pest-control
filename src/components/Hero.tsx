@@ -35,7 +35,7 @@ export default function Hero() {
             </h1>
 
             <p className="text-xl text-gray-200 max-w-2xl mx-auto lg:mx-0 leading-relaxed">
-              Fast response times, eco-friendly & pet-friendly solutions to keep your home or business 100% pest-free
+              Fast response times, eco-friendly & pet-friendly solutions to keep your home or business 100% pest-free.
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">

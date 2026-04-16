@@ -15,7 +15,7 @@ export default function Footer() {
               AMEN <span className="text-[var(--color-accent)]">Pest Control</span>
             </h3>
             <p className="text-blue-100 text-sm leading-relaxed">
-              Los Angeles&apos; most trusted pest control service. We provide environmentally-friendly pest control options and effective solutions for commercial properties and residential owners.
+              Southern California&apos;s most trusted pest control service. We provide environmentally-friendly pest control options and effective solutions for commercial properties and residential owners.
             </p>
             <div className="flex space-x-4 pt-2">
               <Link href="https://www.facebook.com/AmenPestControlLA" target="_blank" rel="noopener noreferrer" className="text-blue-200 hover:text-white transition-colors">
@@ -68,7 +68,7 @@ export default function Footer() {
                 <MapPin className="h-5 w-5 text-[var(--color-accent)] mr-3 mt-0.5 flex-shrink-0" />
                 <span className="text-blue-100 leading-tight">
                   3435 Ocean Park Blvd. #107,<br />
-                  Santa Monica, CA 90405
+                  Southern California
                 </span>
               </li>
             </ul>

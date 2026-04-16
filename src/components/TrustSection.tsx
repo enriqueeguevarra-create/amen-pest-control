@@ -7,17 +7,17 @@ const trustFeatures = [
   {
     icon: Leaf,
     title: 'Eco & Pet Friendly',
-    description: 'We use EPA-approved, environmentally-friendly products that are safe for your children, pets, and the planet',
+    description: 'We use EPA-approved, environmentally-friendly products that are safe for your children, pets, and the planet.',
   },
   {
     icon: ShieldCheck,
     title: 'A+ Rating on BBB',
-    description: 'The A+ rating with the BBB represents our hard work to build strong relationships with our clients',
+    description: 'The A+ rating with the BBB represents our hard work to build strong relationships with our clients.',
   },
   {
     icon: HeartHandshake,
     title: '100% Satisfaction Guarantee',
-    description: 'If you are still experiencing an issue with the pest we treated for within 30 days, we will come out to treat again at no cost to you',
+    description: 'If you are still experiencing an issue with the pest we treated for within 30 days, we will come out to treat again at no cost to you.',
   },
 ];
 
@@ -32,7 +32,7 @@ export default function TrustSection() {
             The Future of Integrated Pest Management
           </h3>
           <p className="text-xl text-gray-600">
-            We don't just spray chemicals and leave We provide environmentally-friendly, effective solutions backed by an unbeatable guarantee
+            We don't just spray chemicals and leave. We provide environmentally-friendly, effective solutions backed by an unbeatable guarantee.
           </p>
         </div>
 

@@ -10,7 +10,7 @@ const sections = [
   },
   {
     title: '2. Services Provided',
-    text: 'AMEN Pest Control provides residential and commercial pest management services in the greater Los Angeles area, including but not limited to general pest control, rodent control, bed bug treatment, termite and fungus treatment, bird and fly abatement, heat treatment, and cryonite freezing treatment. Service availability, pricing, and scheduling are subject to change without notice.',
+    text: 'AMEN Pest Control provides residential and commercial pest management services in the greater Southern California area, including but not limited to general pest control, rodent control, bed bug treatment, termite and fungus treatment, bird and fly abatement, heat treatment, and cryonite freezing treatment. Service availability, pricing, and scheduling are subject to change without notice.',
   },
   {
     title: '3. Service Agreements & Scheduling',
