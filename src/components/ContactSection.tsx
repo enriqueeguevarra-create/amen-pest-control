@@ -108,33 +108,33 @@ export default function ContactSection() {
         <div className="bg-white rounded-3xl shadow-2xl overflow-hidden flex flex-col lg:flex-row border border-gray-200">
 
           {/* Contact Information — blue sidebar */}
-          <div className="lg:w-2/5 bg-[var(--color-primary)] text-white p-10 md:p-14 flex flex-col justify-between">
+          <div className="lg:w-2/5 bg-[var(--color-primary)] text-white p-6 sm:p-10 md:p-14 flex flex-col justify-between">
             <div>
-              <h3 className="text-3xl font-extrabold mb-4">Get a Free Quote</h3>
-              <p className="text-blue-100 mb-10 text-lg">
+              <h3 className="text-2xl sm:text-3xl font-extrabold mb-4">Get a Free Quote</h3>
+              <p className="text-blue-100 mb-8 sm:mb-10 text-base sm:text-lg">
                 Fill out the form and our team will get back to you within 24 hours to schedule your free inspection.
               </p>
 
               <div className="space-y-8">
-                <a href="tel:8884282636" className="flex items-center text-xl font-bold group">
-                  <div className="w-12 h-12 bg-white/10 rounded-full flex items-center justify-center mr-4 group-hover:bg-white/20 transition-colors">
+                <a href="tel:8884282636" className="flex items-center font-bold group min-w-0">
+                  <div className="w-11 h-11 sm:w-12 sm:h-12 flex-shrink-0 bg-white/10 rounded-full flex items-center justify-center mr-3 sm:mr-4 group-hover:bg-white/20 transition-colors">
                     <Phone className="h-5 w-5 text-[var(--color-accent)]" />
                   </div>
-                  <div className="flex flex-col">
-                    <span>(888) 428-AMEN</span>
-                    <span className="text-lg font-medium opacity-80">(888) 428-2636</span>
+                  <div className="flex flex-col min-w-0">
+                    <span className="text-lg sm:text-xl">(888) 428-AMEN</span>
+                    <span className="text-base sm:text-lg font-medium opacity-80">(888) 428-2636</span>
                   </div>
                 </a>
 
-                <a href="mailto:nomorepests@amenpestcontrol.com" className="flex items-center text-lg font-medium group">
-                  <div className="w-12 h-12 bg-white/10 rounded-full flex items-center justify-center mr-4 group-hover:bg-white/20 transition-colors">
+                <a href="mailto:nomorepests@amenpestcontrol.com" className="flex items-center text-sm sm:text-base lg:text-lg font-medium group min-w-0">
+                  <div className="w-11 h-11 sm:w-12 sm:h-12 flex-shrink-0 bg-white/10 rounded-full flex items-center justify-center mr-3 sm:mr-4 group-hover:bg-white/20 transition-colors">
                     <Mail className="h-5 w-5 text-[var(--color-accent)]" />
                   </div>
-                  nomorepests@amenpestcontrol.com
+                  <span className="break-all min-w-0">nomorepests@amenpestcontrol.com</span>
                 </a>
 
-                <div className="flex items-center text-lg font-medium">
-                  <div className="w-12 h-12 bg-white/10 rounded-full flex items-center justify-center mr-4">
+                <div className="flex items-center text-base sm:text-lg font-medium">
+                  <div className="w-11 h-11 sm:w-12 sm:h-12 flex-shrink-0 bg-white/10 rounded-full flex items-center justify-center mr-3 sm:mr-4">
                     <MapPin className="h-5 w-5 text-[var(--color-accent)]" />
                   </div>
                   Southern California

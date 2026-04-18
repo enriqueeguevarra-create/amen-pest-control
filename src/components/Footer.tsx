@@ -67,8 +67,8 @@ export default function Footer() {
               <li className="flex items-start">
                 <MapPin className="h-5 w-5 text-[var(--color-accent)] mr-3 mt-0.5 flex-shrink-0" />
                 <span className="text-blue-100 leading-tight">
-                  3435 Ocean Park Blvd. #107,<br />
-                  Southern California
+                  3435 Ocean Park Blvd #107<br />
+                  Santa Monica, CA 90405
                 </span>
               </li>
             </ul>

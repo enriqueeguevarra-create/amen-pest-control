@@ -43,7 +43,7 @@ export default function AboutPage() {
             About <span className="text-[var(--color-accent)]">AMEN Pest Control</span>
           </motion.h1>
           <p className="text-xl text-blue-100 max-w-2xl mx-auto">
-            We&apos;re a family-run, community-driven pest control company serving the greater Southern California area with pride.
+            We&apos;re a family-run, community-driven pest control company serving Southern California area with pride.
           </p>
         </div>
       </section>
@@ -66,6 +66,19 @@ export default function AboutPage() {
             <h3 className="text-3xl md:text-4xl font-extrabold text-[var(--color-primary)] mb-6">
               George
             </h3>
+
+            {/* George's portrait — shown only on screens below lg where the bg image is covered */}
+            <div className="flex justify-center mb-8 lg:hidden">
+              <div className="w-40 h-40 rounded-full overflow-hidden shadow-md ring-4 ring-[var(--color-primary)]/20">
+                <Image
+                  src="/images/george.png"
+                  alt="George — Owner of AMEN Pest Control"
+                  width={160}
+                  height={160}
+                  className="w-full h-full object-cover"
+                />
+              </div>
+            </div>
             <div className="space-y-4 text-black text-lg leading-relaxed">
               <p>
                 George has over 25 years of experience in the pest control industry. He has worked as a technician, inspector, and account manager for small businesses as well as international companies. Since the founding of AMEN in 2013, George's commitment to service has expanded to include motivational speaking presentations as an entrepreneur and licensed professional, AMEN sponsorship of multiple social justice organizations, and collaborations with training programs for people experiencing homelessness, veterans, and others overcoming challenges to re-enter the job market. George and his wife are preparing their 8 children to carry on this legacy of service.
