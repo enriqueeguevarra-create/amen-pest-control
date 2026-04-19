@@ -59,6 +59,31 @@ export default function Services() {
       <div className="absolute inset-0 bg-white/70"></div>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
 
+        {/* Video Overview Section */}
+        <div className="max-w-5xl mx-auto mb-24 text-center">
+          <motion.div
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6 }}
+          >
+            <h2 className="text-3xl md:text-5xl font-extrabold text-[var(--color-primary)] mb-8">
+              AMEN Pest Control Overview
+            </h2>
+            <div className="w-full aspect-video rounded-3xl overflow-hidden shadow-2xl bg-black">
+              <video
+                controls
+                playsInline
+                preload="metadata"
+                className="w-full h-full object-cover"
+              >
+                <source src="/videos/vid_2.mp4" type="video/mp4" />
+                Your browser does not support the video tag.
+              </video>
+            </div>
+          </motion.div>
+        </div>
+
         <div className="flex flex-col md:flex-row md:items-end justify-between mb-16 gap-6">
           <div className="max-w-2xl">
             <h2 className="text-[var(--color-accent)] font-bold tracking-wider uppercase text-sm mb-2">Our Specialized Services</h2>

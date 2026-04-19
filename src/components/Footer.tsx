@@ -60,7 +60,7 @@ export default function Footer() {
               </li>
               <li className="flex items-start">
                 <Mail className="h-5 w-5 text-[var(--color-accent)] mr-3 mt-0.5 flex-shrink-0" />
-                <a href="mailto:NoMorePests@AmenPestControl.com" className="text-blue-100 hover:text-white break-all transition-colors">
+                <a href="mailto:NoMorePests@AmenPestControl.com" className="text-blue-100 hover:text-white transition-colors whitespace-nowrap">
                   NoMorePests@AmenPestControl.com
                 </a>
               </li>

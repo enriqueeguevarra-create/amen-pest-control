@@ -148,33 +148,6 @@ export default function AboutPage() {
         </div>
       </section>
 
-      {/* Video Section */}
-      <section className="pb-24 bg-zinc-50 border-t border-gray-100">
-        <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <motion.div
-            initial={{ opacity: 0, y: 30 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.6 }}
-          >
-            <h2 className="text-3xl md:text-4xl font-extrabold text-[var(--color-primary)] mb-8">
-              AMEN Pest Control Overview
-            </h2>
-            <div className="w-full aspect-video rounded-3xl overflow-hidden shadow-2xl bg-black">
-              <video
-                controls
-                playsInline
-                preload="metadata"
-                className="w-full h-full object-cover"
-              >
-                <source src="/videos/vid_2.mp4" type="video/mp4" />
-                Your browser does not support the video tag.
-              </video>
-            </div>
-          </motion.div>
-        </div>
-      </section>
-
       {/* Values / Mission */}
       <section className="py-20 bg-[var(--color-primary)] text-white text-center">
         <div className="max-w-3xl mx-auto px-4">

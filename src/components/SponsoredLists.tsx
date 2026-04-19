@@ -28,8 +28,11 @@ const duplicatedLogos = [
 export default function SponsoredLists() {
   return (
     <section className="pb-15 pt-5 bg-gray-50 overflow-hidden border-b border-gray-100">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mb-10 text-center">
-        <h2 className="text-sm font-bold tracking-widest uppercase text-[var(--color-accent)]">Our Partners &amp; Affiliations</h2>
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mb-10 text-center space-y-4">
+        <h3 className="text-3xl md:text-4xl font-extrabold text-[var(--color-primary)]">Organizations We Support</h3>
+        <p className="text-lg text-gray-600 max-w-2xl mx-auto">
+          We&apos;re proud to support these organizations making a positive impact in the community.
+        </p>
       </div>
 
       <div className="relative w-full flex overflow-hidden">
