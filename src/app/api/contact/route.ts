@@ -58,9 +58,9 @@ export async function POST(request: Request) {
     }
 
     // ── Sanitize all string inputs
-    const name    = sanitize(data.name, 100);
-    const phone   = sanitize(data.phone, 20);
-    const email   = sanitize(data.email, 254);
+    const name = sanitize(data.name, 100);
+    const phone = sanitize(data.phone, 20);
+    const email = sanitize(data.email, 254);
     const message = sanitize(data.message, 2000);
 
     // ── Validate required fields
@@ -138,7 +138,7 @@ export async function POST(request: Request) {
 
     if (error) {
       console.error('[Resend Error]', JSON.stringify(error, null, 2));
-      return NextResponse.json({ error: error.message }, { status: 400 });
+      return NextResponse.json({ error: "Internal server error, please call us at (888) 428-2636" }, { status: 400 });
     }
 
     console.log('[Resend] Email sent successfully. ID:', sendData?.id);
