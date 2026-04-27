@@ -39,7 +39,6 @@ export default function Hero() {
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
-              {/* TEMPORARY CTA — Book A Service button commented out until booking system is live
               <Link
                 href="https://api.leadconnectorhq.com/booking/amen-pest-control-l3o6zkahen"
                 target="_blank"
@@ -47,13 +46,6 @@ export default function Hero() {
                 className="bg-[var(--color-accent)] hover:bg-[var(--color-accent-hover)] text-white px-8 py-4 rounded-md font-bold text-lg transition-transform transform hover:-translate-y-1 shadow-lg w-full sm:w-auto text-center"
               >
                 Book A Service
-              </Link>
-              */}
-              <Link
-                href="/#contact"
-                className="bg-[var(--color-accent)] hover:bg-[var(--color-accent-hover)] text-white px-8 py-4 rounded-md font-bold text-lg transition-transform transform hover:-translate-y-1 shadow-lg w-full sm:w-auto text-center"
-              >
-                Get a Free Quote
               </Link>
               <Link
                 href="tel:8884282636"
